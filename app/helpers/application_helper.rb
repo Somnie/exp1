@@ -9,5 +9,12 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"                 # String interpolation
     end
   end
-end
 
+  # Returns the logo code
+  def logo
+    image_tag("logo.png",
+              alt: "Sample App", 
+              class: "round")
+  end
+
+end
