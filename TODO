@@ -1,0 +1,14 @@
+8. Exercises
+
+1.Refactor the signin form to use form_tag in place of form_for. Hint: See the RailsCast on authentication in Rails 3.1. Make sure the test suite still passes.
+2.Use session instead of cookies so that users are automatically signed out when they close their browsers
+3.Go through the user and authentication request specs (i.e., the files currently in the spec/requests directory/) and define utility functions in spec/support/utilities.rb to decouple the test from the implementation. Extra credit: Organize the support code into separate files and modules, and get everything to work by including the modules properly in the spec helper file.
+
+
+
+9. Exercises
+
+3.Use the sign_in test helper from Listing 9.12 in as many places as you can find.
+5.Signed-in users have no reason to access the new and create actions in the Users controller. Arrange for such users to be redirected to the root url if they do try to hit those pages.
+6.Learn about the request object by inserting some of the methods listed in the Rails API9 into the site layout. (Refer to Listing 7.1 if you get stuck.)
+9.Modify the destroy action to prevent admin users from destroying themselves. (Write a test first.)
